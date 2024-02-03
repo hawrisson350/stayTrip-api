@@ -1,0 +1,49 @@
+{
+    "users": [
+        {
+            "username": "admin",
+            "email": "admin@admin.com",
+            "password": "admin",
+            "profile":"1",
+            "id": 1
+        },
+        {
+            "username": "user1",
+            "email": "User1@User1.com",
+            "password": "user1",
+            "profile":"2",
+            "id": 2
+        },
+        {
+            "username": "user2",
+            "email": "User2@User2.com",
+            "password": "user2",
+            "profile":"2",
+            "id": 2
+        }
+    ],
+    "hotel": [
+        {
+            "id": 1,
+            "title": "Post 1"
+        },
+        {
+            "id": 2,
+            "title": "Post 2"
+        },
+        {
+            "id": 3,
+            "title": "Post 3"
+        }
+    ],
+    "reservation": [
+        {
+            "id": 1,
+            "body": "Comment 1"
+        },
+        {
+            "id": 2,
+            "body": "Comment 2"
+        }
+    ]
+}

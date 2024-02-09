@@ -1,49 +1,214 @@
 {
-    "users": [
+  "user": [
+    {
+      "id": "1",
+      "name": "Administrator",
+      "lastname": "Administrator",
+      "birthday": "03-12-1996",
+      "gender": "M",
+      "documentType": "CC",
+      "documentNumber": "1017242387",
+      "email": "hawrisson350@hotmail.com",
+      "phone": "3212540546",
+      "password": "123",
+      "role": 1
+    },
+    {
+      "id": "2",
+      "name": "Juan",
+      "lastname": "Perez",
+      "birthday": "03-12-2000",
+      "gender": "M",
+      "documentType": "CC",
+      "documentNumber": "1045269849",
+      "email": "hawrisson350@gmail.com",
+      "phone": "3212542246",
+      "password": "123",
+      "role": 2
+    },
+    {
+      "id": "69c0",
+      "name": "Pedro",
+      "lastname": "Perez",
+      "birthday": "2024-02-08",
+      "gender": "F",
+      "documentType": "CC",
+      "documentNumber": "1017242387",
+      "email": "peras@mail.com",
+      "phone": "3212540546",
+      "password": "123",
+      "role": 2
+    }
+  ],
+  "hotel": [
+    {
+      "id": "2",
+      "name": "Dann Carlton",
+      "city": "Cartagena de Indias",
+      "department": 4,
+      "address": "Calle 58 #722",
+      "description": "Otro hotel con todas las comodidades",
+      "photo": "https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "status": "A"
+    },
+    {
+      "id": "3",
+      "name": "InterContinental",
+      "city": "Medellín",
+      "department": 1,
+      "address": "Calle 58 #722",
+      "description": "Un hotel mas con todas las comodidades",
+      "photo": "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "status": "A"
+    },
+    {
+      "id": "c1b6",
+      "name": "Hotel Gran Plaza",
+      "city": "Barranquilla",
+      "department": 3,
+      "address": "Calle 58 #722",
+      "description": "Un hotel mas con todas las mejores comodidades",
+      "photo": "https://images.pexels.com/photos/774042/pexels-photo-774042.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "status": "A"
+    },
+    {
+      "id": "bff4",
+      "name": "Decameron",
+      "city": "Cali",
+      "department": 29,
+      "address": "Calle 58 #722",
+      "description": "Hotel con todas las comodidades del mundo",
+      "photo": "https://images.pexels.com/photos/1458457/pexels-photo-1458457.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "status": "A"
+    }
+  ],
+  "room": [
+    {
+      "id": "53a9",
+      "baseCost": 60000,
+      "taxes": 0.3,
+      "type": "Doble",
+      "location": "305",
+      "amountPersons": 2,
+      "description": "Una habitacion con todas las comodidades",
+      "status": "A",
+      "available": "true",
+      "hotel": "bff4"
+    },
+    {
+      "id": "edf2",
+      "baseCost": 2000000,
+      "taxes": 0.5,
+      "type": "Suite",
+      "location": "309",
+      "amountPersons": 15,
+      "description": "La mejor habitación del hotel",
+      "status": "A",
+      "available": true,
+      "hotel": "2"
+    },
+    {
+      "id": "6047",
+      "baseCost": "90000",
+      "taxes": "0.3",
+      "type": "Familiar",
+      "location": "308",
+      "amountPersons": 6,
+      "description": "Una muy buena habitación",
+      "status": "A",
+      "available": true,
+      "hotel": "bff4"
+    }
+  ],
+  "reservation": [
+    {
+      "id": "1",
+      "startDate": "2024-02-04",
+      "endDate": "06-02-2025",
+      "status": "A",
+      "user": "1",
+      "rooms": [
+        "6047"
+      ],
+      "guests": [
         {
-            "username": "admin",
-            "email": "admin@admin.com",
-            "password": "admin",
-            "profile":"1",
-            "id": 1
-        },
-        {
-            "username": "user1",
-            "email": "User1@User1.com",
-            "password": "user1",
-            "profile":"2",
-            "id": 2
-        },
-        {
-            "username": "user2",
-            "email": "User2@User2.com",
-            "password": "user2",
-            "profile":"2",
-            "id": 2
+          "name": "Carla",
+          "lastname": "López",
+          "birthday": "03-12-1996",
+          "gender": "M",
+          "documentType": "CC",
+          "documentNumber": "1017242387",
+          "email": "hawrisson350@gmail.com",
+          "phone": "3212540546"
         }
-    ],
-    "hotel": [
+      ],
+      "emergencyContact": {
+        "name": "Carla",
+        "phone": "3212540546"
+      }
+    },
+    {
+      "id": "3fea",
+      "startDate": "2024-02-08",
+      "endDate": "2024-02-08",
+      "status": "A",
+      "user": "1",
+      "rooms": [
+        "53a9",
+        "6047"
+      ],
+      "guests": [
         {
-            "id": 1,
-            "title": "Post 1"
+          "name": "Hawrisson",
+          "lastname": "Avendaño",
+          "birthday": "2024-02-08",
+          "gender": "F",
+          "documentType": "CC",
+          "documentNumber": "1017242387",
+          "email": "hawrisson350@gmail.com",
+          "phone": "3212540546"
         },
         {
-            "id": 2,
-            "title": "Post 2"
-        },
-        {
-            "id": 3,
-            "title": "Post 3"
+          "name": "Hawrisson",
+          "lastname": "Avendaño",
+          "birthday": "2024-02-07",
+          "gender": "F",
+          "documentType": "CC",
+          "documentNumber": "1017242387",
+          "email": "hawrisson350@gmail.com",
+          "phone": "3212540546"
         }
-    ],
-    "reservation": [
+      ],
+      "emergencyContact": {
+        "name": "Hawrisson Avendaño",
+        "phone": "326521564"
+      }
+    },
+    {
+      "id": "8cf1",
+      "startDate": "2024-02-01",
+      "endDate": "2024-02-01",
+      "status": "A",
+      "user": "1",
+      "rooms": [
+        "53a9"
+      ],
+      "guests": [
         {
-            "id": 1,
-            "body": "Comment 1"
-        },
-        {
-            "id": 2,
-            "body": "Comment 2"
+          "name": "Hawrisson",
+          "lastname": "Avendaño",
+          "birthday": "2024-02-01",
+          "gender": "M",
+          "documentType": "CC",
+          "documentNumber": "1017242387",
+          "email": "hawrisson350@gmail.com",
+          "phone": "3212540546"
         }
-    ]
+      ],
+      "emergencyContact": {
+        "name": "Hawrisson Avendaño",
+        "phone": "2342343"
+      }
+    }
+  ]
 }

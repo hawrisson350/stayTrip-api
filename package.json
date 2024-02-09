@@ -2,11 +2,10 @@
     "name": "stayTrip",
     "version": "0.0.0",
     "scripts": {
-        "start": "npx json-server-plus db.json"
+        "start": "npx json-server -w db.json -p 8080"
     },
     "private": true,
     "dependencies": {
-        "json-server-plus": "^0.12.4"
-    },
-    "devDependencies": {}
+        "json-server": "^1.0.0-alpha.23"
+    }
 }
